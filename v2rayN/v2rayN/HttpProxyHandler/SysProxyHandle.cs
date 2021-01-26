@@ -62,7 +62,7 @@ namespace v2rayN.HttpProxyHandler
             if (enable)
             {
                 arguments = global
-                    ? $"global {strProxy} {Global.IEProxyExceptions}"
+                    ? $"global http={strProxy};socks=localhost:10808 {Global.IEProxyExceptions}"
                     : $"pac {strProxy}";
             }
             else
